@@ -1,9 +1,9 @@
 //捕捉键值
  #include<stdio.h>
  #include<conio.h>
+
  int main()
  {
- 
    int ch;
    while( (ch=getch())!=0x1B ) /* Press ESC to quit... */
    {
