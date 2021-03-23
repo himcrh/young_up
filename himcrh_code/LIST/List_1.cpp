@@ -1,5 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
+struct link *AppendNode(link *head);
+void DisplayNode(link *head);
+void DeleteMemory(link *head);
 //typedef申明新的数据类型
 typedef struct link{
     int data;   //定义数据域
@@ -11,7 +14,7 @@ link *AppendNode(link *head){
     p=(link *)malloc(sizeof(link));
     if(p==NULL){
         //申请内存失败
-        printf("error");
+        printf("error\n");
         exit(0);
     }
     if(head == NULL){
@@ -28,11 +31,14 @@ link *AppendNode(link *head){
     puts("Input node data");
     int data1;
     scanf("%d",&data1);
+    //输入数据
     p->data = data1;
     p->next = NULL;
+    //链表尾指向NULL
     return head;
 }
 void DisplayNode(link *head){
+    //从头到尾遍历链表
     link *p = head;
     int i = 1;
     while(p != NULL){
