@@ -1,3 +1,4 @@
+//List_1简易单向链表实现
 #include<stdio.h>
 #include<stdlib.h>
 struct link *AppendNode(link *head);
