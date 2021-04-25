@@ -1,5 +1,3 @@
-﻿//邹良钰   
-//2020080903016
 #include<graphics.h>//EasyX图形库
 #include<bits/stdc++.h>
 using namespace std;
